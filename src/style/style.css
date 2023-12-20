@@ -87,6 +87,331 @@ body {
   flex-direction: column;
 }
 
+.special-panel {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.special-panel .content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.special-panel .content ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.special-panel .content ul li .version {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 8px;
+}
+.special-panel .content ul li .version::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.5931 8.09531C22.3584 9.86062 23.1525 11.6222 23.1853 11.6962C23.2279 11.7922 23.25 11.896 23.25 12.0009C23.25 12.1059 23.2279 12.2097 23.1853 12.3056C23.1525 12.3797 22.3584 14.1403 20.5931 15.9056C18.2409 18.2569 15.27 19.5 12 19.5C8.72999 19.5 5.75905 18.2569 3.40687 15.9056C1.64155 14.1403 0.847491 12.3797 0.814679 12.3056C0.772035 12.2097 0.75 12.1059 0.75 12.0009C0.75 11.896 0.772035 11.7922 0.814679 11.6962C0.843741 11.625 1.64155 9.86062 3.40687 8.09531C5.75905 5.74312 8.72999 4.5 12 4.5C15.27 4.5 18.2409 5.74312 20.5931 8.09531ZM12 15C11.4808 15 10.9718 14.8653 10.5222 14.6108C10.458 14.5744 10.3949 14.5356 10.3333 14.4944C9.83992 14.1647 9.45546 13.6962 9.22834 13.1481C9.00129 12.5999 8.94191 11.9967 9.05763 11.4147C9.17341 10.8328 9.45912 10.2982 9.87867 9.87867C10.2982 9.45912 10.8328 9.17341 11.4147 9.05763C11.9967 8.94191 12.5999 9.00129 13.1481 9.22834C13.6962 9.45546 14.1647 9.83998 14.4944 10.3333C14.824 10.8267 15 11.4067 15 12C15 12.7957 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7957 15 12 15Z' fill='black'/%3E%3C/svg%3E");
+  display: block;
+}
+.special-panel .content ul li p {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content ul li .font-min {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.special-panel .content ul li .font-min.active {
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+.special-panel .content ul li .font-middle {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.special-panel .content ul li .font-middle.active {
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+.special-panel .content ul li .font-max {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.special-panel .content ul li .font-max.active {
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+.special-panel .content ul li .color-black {
+  width: 27px;
+  height: 27px;
+  padding: 0 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #000;
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content ul li .color-white {
+  width: 27px;
+  height: 27px;
+  padding: 0 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(154, 154, 154, 0.25);
+  color: #000;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content ul li .color-blue {
+  width: 27px;
+  height: 27px;
+  padding: 0 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #C8E5FF;
+  color: #195183;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content ul li .special-settings {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.special-panel .content ul li .special-settings::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='10' viewBox='0 0 15 10' fill='none'%3E%3Cpath d='M1 1L7.5 8L14 1' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  display: block;
+}
+.special-panel .content ul li .select-wrap {
+  position: relative;
+}
+.special-panel .content ul li .select-wrap .select {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.special-panel .content ul li .select-wrap .select p {
+  display: flex;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+.special-panel .content ul li .select-wrap .select::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%230D1D53' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  display: block;
+}
+.special-panel .content ul li .select-wrap .select-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px 0px 6px 6px;
+  border-bottom: 1px solid #EAEBF0;
+  background: #F5F6FA;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 7;
+  display: none;
+}
+.special-panel .content ul li .select-wrap .select-list.active {
+  display: flex;
+}
+.special-panel .content ul li .select-wrap .select-list li {
+  display: flex;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.special-panel .content .settings-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  padding: 60px 120px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.special-panel .content .settings-panel p {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.special-panel .content .settings-panel .font-panel {
+  display: flex;
+  gap: 62px;
+  align-items: center;
+}
+.special-panel .content .settings-panel .font-panel p {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content .settings-panel .font-panel span {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.special-panel .content .settings-panel .font-panel span.font2 {
+  color: #000;
+  font-family: Georgia;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content .settings-panel .font-panel span.font1 {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content .settings-panel .font-panel span.active {
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+.special-panel .content .settings-panel .line {
+  background: #000;
+  width: 100%;
+  height: 1px;
+}
+.special-panel .content .settings-panel .spacing-panel {
+  display: flex;
+  gap: 62px;
+  align-items: center;
+}
+.special-panel .content .settings-panel .spacing-panel p {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content .settings-panel .spacing-panel span {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.special-panel .content .settings-panel .spacing-panel span .standart-spacing {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.special-panel .content .settings-panel .spacing-panel span .middle-spacing {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.special-panel .content .settings-panel .spacing-panel span .max-spacing {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
+.special-panel .content .settings-panel .spacing-panel span.active {
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+
 .header {
   padding: 16px 0;
 }
