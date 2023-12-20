@@ -88,3 +88,46 @@ if (resSwiper) {
       }
       });
 }
+
+
+// const boxes = document.querySelectorAll(".box");
+
+// boxes.forEach((box) => {
+//   box.addEventListener("click", boxHandler);
+// });
+
+// function boxHandler(e) {
+//   e.preventDefault();
+//   let currentBox = e.target.closest(".box");
+//   let currentContent = e.target.nextElementSibling;
+//   currentBox.classList.toggle("active");
+//   if (currentBox.classList.contains("active")) {
+//     currentContent.style.maxHeight = currentContent.scrollHeight + "px";
+//   } else {
+//     currentContent.style.maxHeight = 0;
+//   }
+// }
+
+document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const accordionContent = button.nextElementSibling;
+
+        button.classList.toggle('active');
+
+        if (button.classList.contains('active')) {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        } else {
+            accordionContent.style.maxHeight = 0;
+        }
+
+        // Close other open accordion items
+        document.querySelectorAll('.accordion-header').forEach(otherButton => {
+            if (otherButton !== button) {
+                otherButton.classList.remove('active');
+                otherButton.nextElementSibling.style.maxHeight = 0;
+            }
+        });
+    });
+});
+
