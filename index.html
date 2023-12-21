@@ -11,23 +11,26 @@
     <div class="special-panel">
         <div class="content">
             <ul>
-                <li>
+                <li class="version-item">
                     <span class="version">Обычная версия</span>
                 </li>
-                <li>
+                <li class="font-item">
                     <p>Размер шрифта:</p>
-                    <span class="font-min active">А</span>
-                    <span class="font-middle">А</span>
-                    <span class="font-max">А</span>
+                    <div class="fonts-select">
+                        <span class="font-min active">А</span>
+                        <span class="font-middle">А</span>
+                        <span class="font-max">А</span>
+                    </div>
+
                 </li>
-                <li>
+                <li class="site-color">
                     <p>Цвет сайта:</p>
                     <span class="color-black">Ц</span>
                     <span class="color-white ">Ц</span>
                     <span class="color-blue">Ц</span>
                 </li>
                 <li><span class="special-settings">Настройки:</span></li>
-                <li>
+                <li class="lang">
                     <span>Язык:</span>
                     <div class="select-wrap">
                         <div class="select languages">
@@ -42,6 +45,12 @@
                 </li>
             </ul>
             <div class="settings-panel">
+                <div class="close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M4.39348 4.3925C4.784 4.00198 5.41717 4.00198 5.80769 4.3925L25.6067 24.1915C25.9972 24.582 25.9972 25.2152 25.6067 25.6057C25.2162 25.9962 24.583 25.9962 24.1925 25.6057L4.39348 5.80672C4.00296 5.41619 4.00295 4.78303 4.39348 4.3925Z" fill="black"/>
+                        <path d="M4.39363 25.6075C4.00311 25.217 4.00311 24.5838 4.39363 24.1933L24.1926 4.39429C24.5831 4.00377 25.2163 4.00377 25.6068 4.39429C25.9974 4.78482 25.9974 5.41798 25.6068 5.80851L5.80784 25.6075C5.41732 25.998 4.78415 25.998 4.39363 25.6075Z" fill="black"/>
+                      </svg>
+                </div>
                 <p>Настройка шрифтов</p>
                 <div class="font-panel">
                     <p>Шрифт: </p>
@@ -51,29 +60,30 @@
                 <div class="line"></div>
                 <div class="spacing-panel">
                     <p>Межбуквенное расстояние: </p>
-                    <span class="standart-spacing">Стандартное</span>
+                    <span class="standart-spacing active">Стандартное</span>
                     <span class="middle-spacing">Увеличенное</span>
                     <span class="max-spacing">Большое</span>
                 </div>
                 <div class="line"></div>
                 <div class="colors-sheme">
                     <p>Цветовая схема:</p>
-                    <label>
-                        <input type="radio" class="black-on-white" name="colors-scheme">
-                        Черный по белому
-                    </label>
-                    <label>
-                        <input type="radio" class="white-on-black" name="colors-scheme">
-                        Белый по черному
-                    </label>
-                    <label>
-                        <input type="radio" class="blue" name="colors-scheme">
-                        Темно-синий по голубому
-                    </label>
-                    <label>
-                        <input type="radio" class="beuge" name="colors-scheme">
-                        Коричневым по бежевому
-                    </label>
+                    <div class="black-on-white">
+                        <input type="radio" id="color-1" checked name="colors-scheme">
+                        <label for="color-1">Черный по белому</label>
+                    </div>
+                    <div class="white-on-black">
+                        <input type="radio" id="color-2" name="colors-scheme">
+                        <label for="color-2">Белый по черному</label>
+                    </div>
+                    <div class="blue">
+                        <input type="radio" id="color-3" name="colors-scheme">
+                        <label for="color-3">Темно-синий по голубому</label>
+                    </div>
+                    <div class="beuge">
+                        <input type="radio" id="color-4" name="colors-scheme">
+                        <label for="color-4">Коричневым по бежевому</label>
+                    </div>
+
                 </div>
                 <div class="btns">
                     <span class="reset-settings">Стандартные настройки</span>
