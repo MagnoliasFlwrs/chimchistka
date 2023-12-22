@@ -131,3 +131,95 @@ document.querySelectorAll('.accordion-header').forEach(button => {
     });
 });
 
+
+
+// special-panel
+
+const specialPanel = document.querySelector('.special-panel');
+const showSpecialPanelBtns = document.querySelectorAll('.to-special-panel');
+const bodyHtml =  document.querySelector('body');
+if (specialPanel) {
+    showSpecialPanelBtns.forEach(el => {
+        el.addEventListener('click' , ()=> {
+            specialPanel.classList.add('active');
+            setStandartSpecial();
+        })
+    })
+    
+    function setStandartSpecial() {
+        bodyHtml.classList.add('standart-special');
+        bodyHtml.querySelectorAll('*').forEach(el=> {
+            el.style.color = '#000';
+            let fontSize = window.getComputedStyle(el).fontSize;
+            el.dataset.fontsize = fontSize;  
+        })
+        bodyHtml.querySelectorAll('img')?.forEach(el=> {
+            el.style.filter = 'grayscale(100%)';
+        })
+        bodyHtml.style.background = "#fff" ;
+
+    }
+    
+    function setFontSize(koefficient , el) {
+        let newFontSize = el.dataset.fontsize.replace('px' , '') * koefficient;
+        el.style.fontSize = `${newFontSize}px` ;
+    }
+    function changeFontSize() {
+        let fontChangeItems = document.querySelectorAll('.fonts-select span');
+        function clearFontChangeItemsActivity() {
+            fontChangeItems?.forEach(el => {
+                if (el.classList.contains('active')) {
+                    el.classList.remove('active')
+                }
+            })
+        }
+        fontChangeItems?.forEach(el => {
+            el.addEventListener('click' , ()=> {
+                clearFontChangeItemsActivity();
+                el.classList.add('active');
+                let koefficient = el.dataset.font;
+                bodyHtml.querySelectorAll('*').forEach(el=> {
+                    setFontSize(koefficient , el)
+                })
+            })
+        })
+    }
+    changeFontSize() 
+    function changeSiteColor() {
+        let siteColors = document.querySelectorAll('.site-color span');
+        function clearSiteColorsActivity() {
+            siteColors?.forEach(el => {
+                if (el.classList.contains('active')) {
+                    el.classList.remove('active')
+                }
+            })
+        }
+        siteColors?.forEach(el=> {
+            el.addEventListener('click' , ()=> {
+                clearSiteColorsActivity();
+                el.classList.add('active');
+                console.log(el.dataset);
+                if (el.dataset.sitecolor == 1) {
+                    bodyHtml.style.background = "#fff" ;
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#000';
+                    })
+                }
+                if (el.dataset.sitecolor == 2) {
+                    bodyHtml.style.background = "#000" ;
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#fff';
+                    })
+                }
+                if (el.dataset.sitecolor == 3) {
+                    bodyHtml.style.background = "#c8e5ff" ;
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#195183';
+                    })
+                }
+            })
+        })
+    }
+    changeSiteColor()
+}
+
