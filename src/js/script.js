@@ -138,6 +138,18 @@ document.querySelectorAll('.accordion-header').forEach(button => {
 const specialPanel = document.querySelector('.special-panel');
 const showSpecialPanelBtns = document.querySelectorAll('.to-special-panel');
 const bodyHtml =  document.querySelector('body');
+const settingsBtn = document.querySelector('.settings-item');
+const settingsPanel = document.querySelector('.settings-panel');
+const closeSettingsBtn = document.querySelectorAll('.settings-panel .close-settings-btn');
+const fontChangeItems = document.querySelectorAll('.fonts-select span');
+const siteColors = document.querySelectorAll('.site-color span');
+const colorSchemes = document.querySelectorAll('.colors-sheme .color-scheme input');
+const spacingItems = document.querySelectorAll('.spacing-panel span');
+const fontFamilyItems =  document.querySelectorAll('.font-panel span');
+const versionBtn = document.querySelector('.version')
+
+
+
 if (specialPanel) {
     showSpecialPanelBtns.forEach(el => {
         el.addEventListener('click' , ()=> {
@@ -145,13 +157,13 @@ if (specialPanel) {
             setStandartSpecial();
         })
     })
-    
+
     function setStandartSpecial() {
         bodyHtml.classList.add('standart-special');
         bodyHtml.querySelectorAll('*').forEach(el=> {
             el.style.color = '#000';
             let fontSize = window.getComputedStyle(el).fontSize;
-            el.dataset.fontsize = fontSize;  
+            el.dataset.fontsize = fontSize;
         })
         bodyHtml.querySelectorAll('img')?.forEach(el=> {
             el.style.filter = 'grayscale(100%)';
@@ -159,20 +171,40 @@ if (specialPanel) {
         bodyHtml.style.background = "#fff" ;
 
     }
-    
+    function closeSpecial() {
+        versionBtn.addEventListener('click' , ()=> {
+            specialPanel.classList.remove('active');
+            bodyHtml.classList.remove('standart-special');
+            bodyHtml.querySelectorAll('*').forEach(el=> {
+                el.style = ''
+            })
+            bodyHtml.style.background = '#fff';
+            if (bodyHtml.classList.contains('special-white')) {
+                bodyHtml.classList.remove('special-white')
+            }
+            if (bodyHtml.classList.contains('special-blue')) {
+                bodyHtml.classList.remove('special-blue')
+            }
+            if (bodyHtml.classList.contains('special-beuge')) {
+                bodyHtml.classList.remove('special-beuge')
+            }
+        })
+    }
+    closeSpecial()
+
     function setFontSize(koefficient , el) {
         let newFontSize = el.dataset.fontsize.replace('px' , '') * koefficient;
         el.style.fontSize = `${newFontSize}px` ;
     }
+    function clearFontChangeItemsActivity() {
+        fontChangeItems?.forEach(el => {
+            if (el.classList.contains('active')) {
+                el.classList.remove('active')
+            }
+        })
+    }
     function changeFontSize() {
-        let fontChangeItems = document.querySelectorAll('.fonts-select span');
-        function clearFontChangeItemsActivity() {
-            fontChangeItems?.forEach(el => {
-                if (el.classList.contains('active')) {
-                    el.classList.remove('active')
-                }
-            })
-        }
+
         fontChangeItems?.forEach(el => {
             el.addEventListener('click' , ()=> {
                 clearFontChangeItemsActivity();
@@ -184,16 +216,16 @@ if (specialPanel) {
             })
         })
     }
-    changeFontSize() 
+    changeFontSize();
+    function clearSiteColorsActivity() {
+        siteColors?.forEach(el => {
+            if (el.classList.contains('active')) {
+                el.classList.remove('active')
+            }
+        })
+    }
     function changeSiteColor() {
-        let siteColors = document.querySelectorAll('.site-color span');
-        function clearSiteColorsActivity() {
-            siteColors?.forEach(el => {
-                if (el.classList.contains('active')) {
-                    el.classList.remove('active')
-                }
-            })
-        }
+
         siteColors?.forEach(el=> {
             el.addEventListener('click' , ()=> {
                 clearSiteColorsActivity();
@@ -204,22 +236,203 @@ if (specialPanel) {
                     bodyHtml.querySelectorAll('*').forEach(el=> {
                         el.style.color = '#000';
                     })
+                    if (bodyHtml.classList.contains('special-white')) {
+                        bodyHtml.classList.remove('special-white')
+                    }
+                    if (bodyHtml.classList.contains('special-blue')) {
+                        bodyHtml.classList.remove('special-blue')
+                    }
+                    if (bodyHtml.classList.contains('special-beuge')) {
+                        bodyHtml.classList.remove('special-beuge')
+                    }
                 }
                 if (el.dataset.sitecolor == 2) {
                     bodyHtml.style.background = "#000" ;
+                    bodyHtml.classList.add('special-white')
                     bodyHtml.querySelectorAll('*').forEach(el=> {
                         el.style.color = '#fff';
                     })
+                    if (bodyHtml.classList.contains('special-blue')) {
+                        bodyHtml.classList.remove('special-blue')
+                    }
+                    if (bodyHtml.classList.contains('special-beuge')) {
+                        bodyHtml.classList.remove('special-beuge')
+                    }
                 }
                 if (el.dataset.sitecolor == 3) {
                     bodyHtml.style.background = "#c8e5ff" ;
+                    bodyHtml.classList.add('special-blue')
                     bodyHtml.querySelectorAll('*').forEach(el=> {
                         el.style.color = '#195183';
+                    })
+                    if (bodyHtml.classList.contains('special-white')) {
+                        bodyHtml.classList.remove('special-white')
+                    }
+                    if (bodyHtml.classList.contains('special-beuge')) {
+                        bodyHtml.classList.remove('special-beuge')
+                    }
+                }
+            })
+        })
+        colorSchemes?.forEach(el=> {
+            el.addEventListener('change' , ()=> {
+                if (el.dataset.sitecolor == 1) {
+                    bodyHtml.style.background = "#fff" ;
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#000';
+                    })
+                    if (bodyHtml.classList.contains('special-white')) {
+                        bodyHtml.classList.remove('special-white')
+                    }
+                    if (bodyHtml.classList.contains('special-blue')) {
+                        bodyHtml.classList.remove('special-blue')
+                    }
+                    if (bodyHtml.classList.contains('special-beuge')) {
+                        bodyHtml.classList.remove('special-beuge')
+                    }
+                }
+                if (el.dataset.sitecolor == 2) {
+                    bodyHtml.style.background = "#000" ;
+                    bodyHtml.classList.add('special-white')
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#fff';
+                    })
+                    if (bodyHtml.classList.contains('special-blue')) {
+                        bodyHtml.classList.remove('special-blue')
+                    }
+                    if (bodyHtml.classList.contains('special-beuge')) {
+                        bodyHtml.classList.remove('special-beuge')
+                    }
+                }
+                if (el.dataset.sitecolor == 3) {
+                    bodyHtml.style.background = "#c8e5ff" ;
+                    bodyHtml.classList.add('special-blue')
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#195183';
+                    })
+                    if (bodyHtml.classList.contains('special-white')) {
+                        bodyHtml.classList.remove('special-white')
+                    }
+                    if (bodyHtml.classList.contains('special-beuge')) {
+                        bodyHtml.classList.remove('special-beuge')
+                    }
+                }
+                if (el.dataset.sitecolor == 4) {
+                    bodyHtml.style.background = "#FFF5E6" ;
+                    bodyHtml.classList.add('special-beuge')
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#301601';
+                    })
+                    if (bodyHtml.classList.contains('special-white')) {
+                        bodyHtml.classList.remove('special-white')
+                    }
+                    if (bodyHtml.classList.contains('special-blue')) {
+                        bodyHtml.classList.remove('special-blue')
+                    }
+                }
+            })
+        })
+    }
+    changeSiteColor();
+
+    function activateSettingsPanel() {
+        settingsBtn.addEventListener('click' , ()=> {
+            settingsPanel.classList.add('active');
+        })
+    }
+    activateSettingsPanel();
+    function closeSettingsPanel() {
+        closeSettingsBtn?.forEach(el=> {
+            el.addEventListener('click' , ()=> {
+                settingsPanel.classList.remove('active');
+            })
+        })
+    }
+    closeSettingsPanel();
+    function resetSpacingItemsActivity() {
+        spacingItems?.forEach(el=> {
+            if(el.classList.contains('active')) {
+                el.classList.remove('active')
+            }
+        })
+    }
+    function changeLetterSpacing() {
+
+        spacingItems?.forEach(el=> {
+            el.addEventListener('click' , ()=> {
+                resetSpacingItemsActivity() ;
+                el.classList.add('active');
+                if (el.dataset.spacing == 1) {
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.letterSpacing = 'normal';
+                    })
+                }
+                if (el.dataset.spacing == 2) {
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.letterSpacing = '0.9px';
+                    })
+                }
+                if (el.dataset.spacing == 3) {
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.letterSpacing = '2.7px';
                     })
                 }
             })
         })
     }
-    changeSiteColor()
+    changeLetterSpacing();
+    function resetFontFamilyItemsActivity() {
+        fontFamilyItems?.forEach(el=> {
+            if(el.classList.contains('active')) {
+                el.classList.remove('active')
+            }
+        })
+    }
+    function changeFontFamily() {
+        fontFamilyItems?.forEach(el=> {
+            el.addEventListener('click' , ()=> {
+                resetFontFamilyItemsActivity();
+                if (el.dataset.family == 1) {
+                    el.classList.add('active') ;
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.fontFamily = 'Open Sans'
+                    })
+                }
+                if (el.dataset.family == 2) {
+                    el.classList.add('active') ;
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.fontFamily = 'Georgia'
+                    })
+                }
+            })
+        })
+    }
+    changeFontFamily();
+    function resetSettings() {
+        bodyHtml.style.background = "#fff" ;
+        bodyHtml.querySelectorAll('*').forEach(el=> {
+            el.style.letterSpacing = 'normal';
+            el.style.fontFamily = 'Open Sans';
+            el.style.color = '#000';
+            setFontSize(1 , el)
+        })
+        if (bodyHtml.classList.contains('special-white')) {
+            bodyHtml.classList.remove('special-white')
+        }
+        if (bodyHtml.classList.contains('special-blue')) {
+            bodyHtml.classList.remove('special-blue')
+        }
+        if (bodyHtml.classList.contains('special-beuge')) {
+            bodyHtml.classList.remove('special-beuge')
+        }
+        clearFontChangeItemsActivity();
+        clearSiteColorsActivity();
+        resetSpacingItemsActivity();
+        resetFontFamilyItemsActivity();
+    }
+    const resetSettingsBtn = document.querySelector('.reset-settings');
+    resetSettingsBtn?.addEventListener('click' , ()=> {
+        resetSettings();
+    })
 }
 

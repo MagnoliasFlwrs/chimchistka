@@ -228,6 +228,62 @@ body.standart-special .main-block-3 .facts .card {
 body.standart-special .main-block-4 .process .row2 .banner {
   background: #E8E8E8;
 }
+body.standart-special .special-panel .content .settings-panel .font-panel span.active {
+  border-radius: 4px;
+  background: #000;
+  color: #fff !important;
+}
+body.standart-special .special-panel .content .settings-panel .spacing-panel span.active {
+  border-radius: 4px;
+  background: #000;
+  color: #fff !important;
+}
+body.standart-special .special-panel .content .settings-panel .colors-sheme .white-on-black [type=radio]:checked + label,
+body.standart-special .special-panel .content .settings-panel .colors-sheme .white-on-black [type=radio]:not(:checked) + label {
+  color: #fff !important;
+}
+body.standart-special .special-panel .content .settings-panel .btns .close-settings-panel {
+  color: #FFF !important;
+}
+body.standart-special.special-white .head-block-banner .content .banner {
+  background: #343434;
+}
+body.standart-special.special-white .head-block-banner .content a {
+  border: 1px solid #000;
+}
+body.standart-special.special-white .footer {
+  background: #343434;
+}
+body.standart-special.special-white .main-block-3 .facts .card {
+  background: #343434;
+}
+body.standart-special.special-white .main-block-4 .process .row2 .banner {
+  background: #343434;
+}
+body.standart-special.special-white .main-block-6 .res-swiper .swiper-wrapper .swiper-slide {
+  background: #343434;
+}
+body.standart-special.special-white .special-panel .content .settings-panel {
+  background: #343434;
+}
+body.standart-special.special-white .special-panel .content .settings-panel .colors-sheme .black-on-white [type=radio]:checked + label,
+body.standart-special.special-white .special-panel .content .settings-panel .colors-sheme .black-on-white [type=radio]:not(:checked) + label {
+  color: #000 !important;
+}
+body.standart-special.special-white .special-panel .content .settings-panel .colors-sheme .blue [type=radio]:checked + label,
+body.standart-special.special-white .special-panel .content .settings-panel .colors-sheme .blue [type=radio]:not(:checked) + label {
+  color: #195183 !important;
+}
+body.standart-special.special-white .special-panel .content .settings-panel .colors-sheme .beuge [type=radio]:checked + label,
+body.standart-special.special-white .special-panel .content .settings-panel .colors-sheme .beuge [type=radio]:not(:checked) + label {
+  color: #301601 !important;
+}
+body.standart-special.special-blue .special-panel .content .settings-panel {
+  background: #C8E5FF;
+}
+body.standart-special.special-beuge .special-panel .content .settings-panel {
+  background: #FFF5E6;
+}
 
 .special-panel {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -505,6 +561,9 @@ body.standart-special .main-block-4 .process .row2 .banner {
     padding: 20px 16px;
   }
 }
+.special-panel .content .settings-panel.active {
+  display: flex;
+}
 .special-panel .content .settings-panel .close-btn {
   position: absolute;
   top: 40px;
@@ -557,7 +616,7 @@ body.standart-special .main-block-4 .process .row2 .banner {
 }
 .special-panel .content .settings-panel .font-panel span.font2 {
   color: #000;
-  font-family: Georgia;
+  font-family: Georgia !important;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

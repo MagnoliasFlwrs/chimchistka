@@ -29,7 +29,7 @@
                     <span data-sitecolor="2" class="color-white ">Ц</span>
                     <span data-sitecolor="3" class="color-blue">Ц</span>
                 </li>
-                <li><span class="special-settings">Настройки:</span></li>
+                <li class="settings-item"><span class="special-settings">Настройки:</span></li>
                 <li class="lang">
                     <span>Язык:</span>
                     <div class="select-wrap">
@@ -45,7 +45,7 @@
                 </li>
             </ul>
             <div class="settings-panel">
-                <div class="close-btn">
+                <div class="close-btn close-settings-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                         <path d="M4.39348 4.3925C4.784 4.00198 5.41717 4.00198 5.80769 4.3925L25.6067 24.1915C25.9972 24.582 25.9972 25.2152 25.6067 25.6057C25.2162 25.9962 24.583 25.9962 24.1925 25.6057L4.39348 5.80672C4.00296 5.41619 4.00295 4.78303 4.39348 4.3925Z" fill="black"/>
                         <path d="M4.39363 25.6075C4.00311 25.217 4.00311 24.5838 4.39363 24.1933L24.1926 4.39429C24.5831 4.00377 25.2163 4.00377 25.6068 4.39429C25.9974 4.78482 25.9974 5.41798 25.6068 5.80851L5.80784 25.6075C5.41732 25.998 4.78415 25.998 4.39363 25.6075Z" fill="black"/>
@@ -54,40 +54,40 @@
                 <p>Настройка шрифтов</p>
                 <div class="font-panel">
                     <p>Шрифт: </p>
-                    <span class="font1 active">Без засечек</span>
-                    <span class="font2">С засечками</span>
+                    <span data-family="1" class="font1 active">Без засечек</span>
+                    <span data-family="2" class="font2">С засечками</span>
                 </div>
                 <div class="line"></div>
                 <div class="spacing-panel">
                     <p>Межбуквенное расстояние: </p>
-                    <span class="standart-spacing active">Стандартное</span>
-                    <span class="middle-spacing">Увеличенное</span>
-                    <span class="max-spacing">Большое</span>
+                    <span data-spacing="1" class="standart-spacing active">Стандартное</span>
+                    <span data-spacing="2" class="middle-spacing">Увеличенное</span>
+                    <span data-spacing="3" class="max-spacing">Большое</span>
                 </div>
                 <div class="line"></div>
                 <div class="colors-sheme">
                     <p>Цветовая схема:</p>
-                    <div class="black-on-white">
-                        <input type="radio" id="color-1" checked name="colors-scheme">
+                    <div class="black-on-white color-scheme">
+                        <input data-sitecolor="1" type="radio" id="color-1" checked name="colors-scheme">
                         <label for="color-1">Черный по белому</label>
                     </div>
-                    <div class="white-on-black">
-                        <input type="radio" id="color-2" name="colors-scheme">
+                    <div class="white-on-black color-scheme">
+                        <input data-sitecolor="2" type="radio" id="color-2" name="colors-scheme">
                         <label for="color-2">Белый по черному</label>
                     </div>
-                    <div class="blue">
-                        <input type="radio" id="color-3" name="colors-scheme">
+                    <div class="blue color-scheme">
+                        <input data-sitecolor="3" type="radio" id="color-3" name="colors-scheme">
                         <label for="color-3">Темно-синий по голубому</label>
                     </div>
-                    <div class="beuge">
-                        <input type="radio" id="color-4" name="colors-scheme">
+                    <div class="beuge color-scheme">
+                        <input data-sitecolor="4" type="radio" id="color-4" name="colors-scheme">
                         <label for="color-4">Коричневым по бежевому</label>
                     </div>
 
                 </div>
                 <div class="btns">
                     <span class="reset-settings">Стандартные настройки</span>
-                    <span class="close-settings-panel">Закрыть панель</span>
+                    <span class="close-settings-panel close-settings-btn">Закрыть панель</span>
                 </div>
             </div>
         </div>
