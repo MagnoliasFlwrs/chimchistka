@@ -100,76 +100,8 @@ body.standart-special .header .content .row1 .select-wrap {
 }
 @media (max-width: 1024px) {
   body.standart-special .header .content .row1 .select-wrap {
-    display: block;
+    display: none;
   }
-}
-body.standart-special .header .content .row1 .select-wrap .select {
-  display: flex;
-  gap: 8px;
-}
-body.standart-special .header .content .row1 .select-wrap .select p {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 1000px;
-  border: 1px solid #0D1D53;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  color: #0D1D53;
-  cursor: pointer;
-  transition: 0.3s ease;
-  position: relative;
-  cursor: pointer;
-}
-body.standart-special .header .content .row1 .select-wrap .select::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%230D1D53' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-  display: block;
-}
-body.standart-special .header .content .row1 .select-wrap .select-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  border-radius: 0px 0px 6px 6px;
-  border-bottom: 1px solid #EAEBF0;
-  background: #F5F6FA;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 7;
-  display: none;
-}
-body.standart-special .header .content .row1 .select-wrap .select-list.active {
-  display: flex;
-}
-body.standart-special .header .content .row1 .select-wrap .select-list li {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 1000px;
-  border: 1px solid #0D1D53;
-  text-align: center;
-  font-family: Open Sans;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  color: #0D1D53;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 body.standart-special .header .content .row1 .wrap {
   display: none;
@@ -294,7 +226,8 @@ body.standart-special.special-beuge .special-panel .content .settings-panel {
 }
 .special-panel .content {
   position: relative;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .special-panel .content ul {
   display: flex;
@@ -561,6 +494,9 @@ body.standart-special.special-beuge .special-panel .content .settings-panel {
   .special-panel .content ul li.lang {
     display: none;
   }
+}
+.special-panel .content ul li.version-item {
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .special-panel .content ul li.version-item {
