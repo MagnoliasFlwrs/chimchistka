@@ -2285,6 +2285,23 @@ a {
             }
         }
     }
+    &.news-single-title-row {
+        .content {
+            h1 {
+                color: var(---, #0D1D53);
+                font-family: Philosopher;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 50px */
+                text-transform: uppercase;
+                max-width: 1080px;
+                @media (max-width:768px) {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }
 .about-block-1 {
     .content {
@@ -3852,4 +3869,85 @@ a {
 }
 .custom-checkbox input:checked ~ .checkbox {
     border: 1px solid #0A1544;
+}
+.news-single-body {
+    margin-bottom: 120px;
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .main-banner {
+            height: 560px;
+            width: 100%;
+            border-radius: 44px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .news-single-content {
+            max-width: 715px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            p {
+                color: var(---, #0D1D53);
+                font-family: Open Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px; /* 156.25% */
+            }
+            img {
+                width: 100%;
+                height: 309px;
+                border-radius: 44px;
+                margin: 4px 0;
+            }
+            h3 {
+                color: var(---, #0D1D53);
+                font-family: Philosopher;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                 li {
+                    color: var(---, #0D1D53);
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 25px; /* 156.25% */
+                    display: flex;
+                    gap: 14px;
+                    align-items: center; 
+                    &::before {
+                        content: '';
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 100%;
+                        background-color: #0D1D53;
+                    }
+                 }
+            }
+            span {
+                padding-left: 26px;
+                color: var(---, #0D1D53);
+                font-family: Open Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
 }
