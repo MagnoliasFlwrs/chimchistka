@@ -88,6 +88,7 @@ a {
             .content {
                 .row1 {
                     justify-content:center ;
+                    z-index: 2;
                     .languages {
                         display: none;
                     }
@@ -104,6 +105,9 @@ a {
                         display: none;
                     }
                 }
+                .line {
+                    z-index: 2;
+                }
                 .row2 {
                     justify-content: center;
                     a {
@@ -113,39 +117,8 @@ a {
                     }
                 }
                 .burger-menu {
-                    position: absolute;
-                    top: 0;
-                    min-height: 100vh;
-                    width: 100%;
-                    background-color: #fff;
                     z-index: 5;
-                    padding: 155px 16px 16px;
-                    left: -2100px;
-                    transition: 0.5s ease;
-
-                    &.open {
-                        left: 0;
-                    }
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        li {
-                            a {
-                                font-family: Open Sans;
-                                font-size: 40px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                                color: #0D1D53;
-                                text-decoration: none;
-
-                                @media (max-width:768px) {
-                                    font-size: 24px;
-                                }
-                            }
-                        }
-                    }
+                    padding: 100px 16px 16px;
                 }
             }
         }
@@ -215,7 +188,6 @@ a {
                 }
             }
         }
-
         &.special-white {
             .head-block-banner {
                 .content {
@@ -307,6 +279,8 @@ a {
   .special-panel {
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
     display: none;
+    position: relative;
+    z-index: 6;
     &.active {
         display: block;
     }
@@ -589,9 +563,15 @@ a {
                     }
                 }
                 &.font-item {
-                    @media (max-width:768px) {
-                        flex-direction: column;
-                        align-items: flex-start;
+                    @media (max-width:1024px) {
+                        display: none;
+                    }
+                }
+                &.special-burger {
+                    display: none;
+                    @media (max-width:1024px) {
+                        display: block;
+                        cursor: pointer;
                     }
                 }
             }
@@ -612,6 +592,8 @@ a {
             display: none;
             @media (max-width:1024px) {
                 padding: 20px 16px;
+                max-height: 85vh;
+                overflow-y: scroll;
             }
             &.active {
                 display: flex;
@@ -1023,7 +1005,7 @@ a {
             }
             .select-wrap {
                 position: relative;
-                padding: 11px 0;
+                // padding: 11px 0;
                 z-index: 7;
                 display: none;
                 @media (max-width:1024px) {
@@ -3881,6 +3863,9 @@ a {
             width: 100%;
             border-radius: 44px;
             overflow: hidden;
+            @media (max-width:768px) {
+                height: 380px;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -3907,6 +3892,9 @@ a {
                 height: 309px;
                 border-radius: 44px;
                 margin: 4px 0;
+                @media (max-width:768px) {
+                    height: 150px;
+                }
             }
             h3 {
                 color: var(---, #0D1D53);
@@ -3915,6 +3903,12 @@ a {
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                @media (max-width:1024px) {
+                    font-size: 20px;
+                }
+                @media (max-width:768px) {
+                    font-size: 18px;
+                }
             }
             ul {
                 display: flex;
@@ -3929,7 +3923,7 @@ a {
                     line-height: 25px; /* 156.25% */
                     display: flex;
                     gap: 14px;
-                    align-items: center; 
+                    align-items: center;
                     &::before {
                         content: '';
                         width: 9px;

@@ -44,8 +44,17 @@ if (customSelects) {
 
 const burgerBtn = document.querySelector('.burger-btn');
 const burgerMenu = document.querySelector('.burger-menu');
-burgerBtn.addEventListener('click' , ()=> {
+const specialBurgerBtn = document.querySelector('.special-burger')
+burgerBtn?.addEventListener('click' , ()=> {
     burgerBtn.classList.toggle('active');
+    burgerMenu.classList.toggle('open');
+    if (burgerMenu.classList.contains('open')) {
+        document.querySelector('body').style.overflow = 'hidden';
+    } else {
+        document.querySelector('body').style.overflow = 'auto';
+    }
+})
+specialBurgerBtn?.addEventListener('click' , ()=> {
     burgerMenu.classList.toggle('open');
     if (burgerMenu.classList.contains('open')) {
         document.querySelector('body').style.overflow = 'hidden';
