@@ -442,6 +442,12 @@ if (specialPanel) {
         clearSiteColorsActivity();
         resetSpacingItemsActivity();
         resetFontFamilyItemsActivity();
+        document.querySelector('.fonts-select .font-min').classList.add('active');
+        document.querySelector('.site-color .color-black').classList.add('active');
+        document.querySelector('.font-panel .font1').classList.add('active');
+        document.querySelector('.spacing-panel .standart-spacing').classList.add('active');
+        document.querySelector('.colors-sheme .black-on-white input').checked = 'true'
+
     }
     const resetSettingsBtn = document.querySelector('.reset-settings');
     resetSettingsBtn?.addEventListener('click' , ()=> {
