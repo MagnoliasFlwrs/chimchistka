@@ -392,64 +392,96 @@ body.standart-special.special-beuge .special-panel .content .settings-panel {
   color: #fff !important;
 }
 .special-panel .content ul li .color-black {
-  width: 27px;
-  height: 27px;
+  min-width: 27px;
+  min-height: 27px;
   padding: 0 7px;
   transition: 0.3s ease;
   cursor: pointer;
   border-radius: 4px;
-  background: #000;
-  color: #FFF;
+  background: #000 !important;
+  color: #FFF !important;
   font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .special-panel .content ul li .color-black.active {
   border-radius: 4px;
-  background: #000;
+  background: #000 !important;
   color: #fff !important;
 }
 .special-panel .content ul li .color-white {
-  width: 27px;
-  height: 27px;
+  min-width: 27px;
+  min-height: 27px;
   padding: 0 7px;
   transition: 0.3s ease;
   cursor: pointer;
   border-radius: 4px;
-  background: #FFF;
+  background: #FFF !important;
   box-shadow: 0px 0px 10px 0px rgba(154, 154, 154, 0.25);
-  color: #000;
+  color: #000 !important;
   font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .special-panel .content ul li .color-white.active {
   border-radius: 4px;
-  background: #000;
+  background: #000 !important;
   color: #fff !important;
 }
 .special-panel .content ul li .color-blue {
-  width: 27px;
-  height: 27px;
+  min-width: 27px;
+  min-height: 27px;
   padding: 0 7px;
   transition: 0.3s ease;
   cursor: pointer;
   border-radius: 4px;
-  background: #C8E5FF;
-  color: #195183;
+  background: #C8E5FF !important;
+  color: #195183 !important;
   font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .special-panel .content ul li .color-blue.active {
   border-radius: 4px;
-  background: #000;
+  background: #000 !important;
+  color: #fff !important;
+}
+.special-panel .content ul li .color-beuge {
+  min-width: 27px;
+  min-height: 27px;
+  padding: 0 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #FFF5E6 !important;
+  color: #301601 !important;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.special-panel .content ul li .color-beuge.active {
+  border-radius: 4px;
+  background: #000 !important;
   color: #fff !important;
 }
 .special-panel .content ul li .special-settings {

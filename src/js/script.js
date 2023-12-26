@@ -272,6 +272,19 @@ if (specialPanel) {
                         bodyHtml.classList.remove('special-beuge')
                     }
                 }
+                if (el.dataset.sitecolor == 4) {
+                    bodyHtml.style.background = "#FFF5E6" ;
+                    bodyHtml.classList.add('special-beuge')
+                    bodyHtml.querySelectorAll('*').forEach(el=> {
+                        el.style.color = '#301601';
+                    })
+                    if (bodyHtml.classList.contains('special-white')) {
+                        bodyHtml.classList.remove('special-white')
+                    }
+                    if (bodyHtml.classList.contains('special-blue')) {
+                        bodyHtml.classList.remove('special-blue')
+                    }
+                }
             })
         })
         colorSchemes?.forEach(el=> {
@@ -414,7 +427,7 @@ if (specialPanel) {
             el.style.letterSpacing = 'normal';
             el.style.fontFamily = 'Open Sans';
             el.style.color = '#000';
-            setFontSize(1 , el)
+            setFontSize(1.1 , el)
         })
         if (bodyHtml.classList.contains('special-white')) {
             bodyHtml.classList.remove('special-white')
