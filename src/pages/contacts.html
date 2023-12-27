@@ -8,6 +8,94 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="special-panel">
+        <div class="content">
+            <ul>
+                <li class="version-item">
+                    <span class="version">Обычная версия</span>
+                </li>
+                <li class="font-item">
+                    <p>Размер шрифта:</p>
+                    <div class="fonts-select">
+                        <span data-font="1.1" class="font-min active">А</span>
+                        <span data-font="1.2" class="font-middle">А</span>
+                        <span data-font="1.3" class="font-max">А</span>
+                    </div>
+
+                </li>
+                <li class="site-color">
+                    <p>Цвет сайта:</p>
+                    <span data-sitecolor="1" class="color-black active">Ц</span>
+                    <span data-sitecolor="2" class="color-white ">Ц</span>
+                    <span data-sitecolor="3" class="color-blue">Ц</span>
+                    <span data-sitecolor="4" class="color-beuge">Ц</span>
+                </li>
+                <li class="settings-item"><span class="special-settings">Настройки:</span></li>
+                <li class="lang">
+                    <span>Язык:</span>
+                    <div class="select-wrap">
+                        <div class="select languages">
+                            <p data-current="0">РУС</p>
+                        </div>
+                        <ul class="select-list">
+                            <li data-value="0">РУС</li>
+                            <li data-value="1">БЕЛ</li>
+                            <li data-value="2">ENG</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="special-burger">
+                    Меню
+                </li>
+            </ul>
+            <div class="settings-panel">
+                <div class="close-btn close-settings-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M4.39348 4.3925C4.784 4.00198 5.41717 4.00198 5.80769 4.3925L25.6067 24.1915C25.9972 24.582 25.9972 25.2152 25.6067 25.6057C25.2162 25.9962 24.583 25.9962 24.1925 25.6057L4.39348 5.80672C4.00296 5.41619 4.00295 4.78303 4.39348 4.3925Z" fill="black"/>
+                        <path d="M4.39363 25.6075C4.00311 25.217 4.00311 24.5838 4.39363 24.1933L24.1926 4.39429C24.5831 4.00377 25.2163 4.00377 25.6068 4.39429C25.9974 4.78482 25.9974 5.41798 25.6068 5.80851L5.80784 25.6075C5.41732 25.998 4.78415 25.998 4.39363 25.6075Z" fill="black"/>
+                      </svg>
+                </div>
+                <p>Настройка шрифтов</p>
+                <div class="font-panel">
+                    <p>Шрифт: </p>
+                    <span data-family="1" class="font1 active">Без засечек</span>
+                    <span data-family="2" class="font2">С засечками</span>
+                </div>
+                <div class="line"></div>
+                <div class="spacing-panel">
+                    <p>Межбуквенное расстояние: </p>
+                    <span data-spacing="1" class="standart-spacing active">Стандартное</span>
+                    <span data-spacing="2" class="middle-spacing">Увеличенное</span>
+                    <span data-spacing="3" class="max-spacing">Большое</span>
+                </div>
+                <div class="line"></div>
+                <div class="colors-sheme">
+                    <p>Цветовая схема:</p>
+                    <div class="black-on-white color-scheme">
+                        <input data-sitecolor="1" type="radio" id="color-1" checked name="colors-scheme">
+                        <label for="color-1">Черный по белому</label>
+                    </div>
+                    <div class="white-on-black color-scheme">
+                        <input data-sitecolor="2" type="radio" id="color-2" name="colors-scheme">
+                        <label for="color-2">Белый по черному</label>
+                    </div>
+                    <div class="blue color-scheme">
+                        <input data-sitecolor="3" type="radio" id="color-3" name="colors-scheme">
+                        <label for="color-3">Темно-синий по голубому</label>
+                    </div>
+                    <div class="beuge color-scheme">
+                        <input data-sitecolor="4" type="radio" id="color-4" name="colors-scheme">
+                        <label for="color-4">Коричневым по бежевому</label>
+                    </div>
+
+                </div>
+                <div class="btns">
+                    <span class="reset-settings">Стандартные настройки</span>
+                    <span class="close-settings-panel close-settings-btn">Закрыть панель</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="content">
             <div class="row1">
@@ -31,7 +119,7 @@
                     <span>ОАО "ХИМЧИСТКА И СТИРКА БЕЛЬЯ"</span>
                 </a>
                 <div class="wrap">
-                    <div class="eye">
+                    <div class="eye to-special-panel">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M23.1853 11.6962C23.1525 11.6222 22.3584 9.86062 20.5931 8.09531C18.2409 5.74312 15.27 4.5 12 4.5C8.72999 4.5 5.75905 5.74312 3.40687 8.09531C1.64155 9.86062 0.843741 11.625 0.814679 11.6962C0.772035 11.7922 0.75 11.896 0.75 12.0009C0.75 12.1059 0.772035 12.2097 0.814679 12.3056C0.847491 12.3797 1.64155 14.1403 3.40687 15.9056C5.75905 18.2569 8.72999 19.5 12 19.5C15.27 19.5 18.2409 18.2569 20.5931 15.9056C22.3584 14.1403 23.1525 12.3797 23.1853 12.3056C23.2279 12.2097 23.25 12.1059 23.25 12.0009C23.25 11.896 23.2279 11.7922 23.1853 11.6962ZM12 18C9.11437 18 6.59343 16.9509 4.50655 14.8828C3.65028 14.0313 2.92179 13.0603 2.34374 12C2.92164 10.9396 3.65014 9.9686 4.50655 9.11719C6.59343 7.04906 9.11437 6 12 6C14.8856 6 17.4066 7.04906 19.4934 9.11719C20.3514 9.9684 21.0815 10.9394 21.6609 12C20.985 13.2619 18.0403 18 12 18ZM12 7.5C11.11 7.5 10.2399 7.76392 9.49993 8.25839C8.7599 8.75285 8.18313 9.45566 7.84253 10.2779C7.50194 11.1002 7.41282 12.005 7.58646 12.8779C7.76009 13.7508 8.18867 14.5526 8.81801 15.182C9.44735 15.8113 10.2492 16.2399 11.1221 16.4135C11.995 16.5872 12.8998 16.4981 13.7221 16.1575C14.5443 15.8169 15.2471 15.2401 15.7416 14.5001C16.2361 13.76 16.5 12.89 16.5 12C16.4988 10.8069 16.0242 9.66303 15.1806 8.81939C14.337 7.97575 13.1931 7.50124 12 7.5ZM12 15C11.4066 15 10.8266 14.8241 10.3333 14.4944C9.83993 14.1648 9.45542 13.6962 9.22835 13.1481C9.00129 12.5999 8.94188 11.9967 9.05764 11.4147C9.17339 10.8328 9.45911 10.2982 9.87867 9.87868C10.2982 9.45912 10.8328 9.1734 11.4147 9.05764C11.9967 8.94189 12.5999 9.0013 13.148 9.22836C13.6962 9.45542 14.1648 9.83994 14.4944 10.3333C14.824 10.8266 15 11.4067 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15Z" fill="#0D1D53"/>
                       </svg>
@@ -49,7 +137,7 @@
             </div>
             <div class="line"></div>
             <div class="row2">
-                <a href="mailto:Mogilev@chimchistka.by">Mogilev@chimchistka.by</a>
+                <a class="link" href="mailto:Mogilev@chimchistka.by">Mogilev@chimchistka.by</a>
                 <nav>
                     <ul>
                         <li><a href="#">Услуги</a></li>
@@ -57,24 +145,42 @@
                         <li><a href="#">Цены</a></li>
                         <li><a href="#">Пункты приема</a></li>
                         <li><a href="#">О нас</a></li>
-                        <li><a href="#">Информация</a></li>
+                        <li class="header-dropdown">
+                            <a href="#">Информация</a>
+                            <ul class="header-submenu">
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Сертификаты</a></li>
+                                <li><a href="#">Для акционеров</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <a href="tel:+375 22 272-98-96">+375 22 272-98-96</a>
+                <a class="link" href="tel:+375 22 272-98-96">+375 22 272-98-96</a>
             </div>
             <div class="burger-menu">
-                <ul>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Продукция</a></li>
-                    <li><a href="#">Цены</a></li>
-                    <li><a href="#">Пункты приема</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+                <div class="burger-wrapper">
+                    <ul>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Продукция</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Пункты приема</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li class="burger-dropdown">
+                            <div class="dropdown-head">
+                                <a href="#">Информация</a>
+                            </div>
+                            <ul class="burger-submenu">
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Сертификаты</a></li>
+                                <li><a href="#">Для акционеров</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
