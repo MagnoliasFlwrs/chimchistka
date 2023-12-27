@@ -335,6 +335,36 @@ a {
                     }
                 }
             }
+            .main-block-1 {
+                .services {
+                    .row {
+                        a {
+                            span {
+                                color: #000 !important;
+                            }
+                            &.all {
+                                border: 1px solid  #fff;
+                                span {
+                                    color: #fff !important;
+                                }
+                                &:hover {
+                                    background: transparent;
+                                    span {
+                                        color: #fff;
+                                        text-decoration: none;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .chapter {
+                .line {
+                    background: #fff;
+                }
+            }
         }
         &.special-blue {
             .special-panel {

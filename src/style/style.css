@@ -240,6 +240,25 @@ body.standart-special.special-white .special-panel .content .settings-panel .col
 body.standart-special.special-white .special-panel .content .settings-panel .colors-sheme .beuge [type=radio]:not(:checked) + label {
   color: #301601 !important;
 }
+body.standart-special.special-white .main-block-1 .services .row a span {
+  color: #000 !important;
+}
+body.standart-special.special-white .main-block-1 .services .row a.all {
+  border: 1px solid #fff;
+}
+body.standart-special.special-white .main-block-1 .services .row a.all span {
+  color: #fff !important;
+}
+body.standart-special.special-white .main-block-1 .services .row a.all:hover {
+  background: transparent;
+}
+body.standart-special.special-white .main-block-1 .services .row a.all:hover span {
+  color: #fff;
+  text-decoration: none;
+}
+body.standart-special.special-white .chapter .line {
+  background: #fff;
+}
 body.standart-special.special-blue .special-panel .content .settings-panel {
   background: #C8E5FF;
 }
