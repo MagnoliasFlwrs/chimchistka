@@ -63,6 +63,32 @@ specialBurgerBtn?.addEventListener('click' , ()=> {
     }
 })
 
+// header-submenu
+
+const headerDropdown = document.querySelector('.header-dropdown');
+const headerSubmenu = document.querySelector('.header-submenu');
+
+if (headerDropdown) {
+    headerDropdown.addEventListener('click' , (e)=> {
+        e.preventDefault();
+        e.stopPropagation()
+        headerDropdown.classList.toggle('active');
+        headerSubmenu.classList.toggle('active')
+    })
+    document.addEventListener('click' , (e)=> {
+        if (!e.target.classList.contains('header-submenu') && !e.target.classList.contains('header-dropdown')) {
+            headerDropdown.classList.remove('active');
+            headerSubmenu.classList.remove('active')
+        }
+    })
+}
+
+const burgerDropdown =  document.querySelector('.burger-dropdown');
+
+burgerDropdown?.addEventListener('click' , ()=> {
+    burgerDropdown.classList.toggle('active')
+})
+
 
 let resSwiper = document.querySelector('.res-swiper');
 
