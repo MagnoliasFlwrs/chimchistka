@@ -229,6 +229,36 @@ a {
                 }
             }
         }
+        .about-block-3 {
+            .content {
+                .contact {
+                    .form-wrapper {
+                        form {
+                            button {
+                                background: #E8E8E8;
+                                border: 1px solid #000;
+                                color: #000;
+                                &:hover {
+                                    background: #E8E8E8;
+                                    border: 1px solid #000;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+        
+                }
+            }
+        }
+        .news-body {
+            .content {
+                .news-cards {
+                    .news-card {
+                        height: auto;
+                    }
+                }
+            }
+        }
         &.special-white {
             .head-block-banner {
                 .content {
@@ -401,6 +431,160 @@ a {
                     }
                 }
             }
+            .about-block-3 {
+                .content {
+                    .contact {
+                        .form-wrapper {
+                            form {
+                                label {
+                                    p {
+                                        color: var(--unnamed, #0D1D53);
+                                        font-family: Open Sans;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        span {
+                                            color: var(--unnamed, #FF1D1D);
+                                            font-family: Open Sans;
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: normal;
+                                        }
+                                    }
+                                    input {
+                                        background: #343434;
+                                    }
+                                    &.custom-checkbox {
+                                        flex-direction: row;
+                                        .checkbox {
+                                            border: 1px solid #fff;
+                                            .checkmark path {
+                                                fill: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                                button {
+                                    background: #343434;
+                                    border: 1px solid #343434;
+                                    color: #fff;
+                                    &:hover {
+                                        background: #343434;
+                                        border: 1px solid #343434;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+            
+                    }
+                }
+            }
+            .vacancies-body {
+                .content {
+                    .vacancies-block {
+                        .accordion-item {
+                            border-top: 1px solid #fff;
+                            .accordion-header {
+                                svg path {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .priem-body {
+                .content {
+                    .priem-items {
+                        .priem-item {
+                            .line {
+                                background: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .price-body {
+                .content {
+                    .price-block {
+                        .accordion-item {
+                            border-top: 1px solid #fff;
+                            .accordion-header {
+                                svg path {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .news-body {
+                .content {
+                    .controls {
+                        .arrow {
+                            svg path{
+                                fill:#fff;
+                            }
+                        }
+                        ul {
+                            margin: 0 8px;
+                            display: flex;
+                            gap: 12px;
+                            li {
+                                width: 33px;
+                                height: 33px;
+                                display: flex;
+                                padding: 4px;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                border-radius: 6px;
+                                border: 1px solid #fff;
+                                color: #fff;
+                                text-align: center;
+                                font-family: Open Sans;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 25px; /* 156.25% */
+                                transition: .3s ease;
+                                cursor: pointer;
+            
+                                &:hover {
+                                    border-radius: 6px;
+                                    border: 1px solid #fff;
+                                    color: #fff;
+                                }
+            
+                                &.active {
+                                    border-radius: 6px;
+                                    border: 1px solid #fff;
+                                    color: #fff;
+                                }
+                            }
+                        }
+            
+                    }
+                }
+            }
+            .news-single-body {
+                .content {
+                    .news-single-content {
+                        ul {
+                             li {
+                                &::before {
+                                    background-color: #fff;
+                                }
+                             }
+                        }
+                    }
+                }
+            }
+            
         }
         &.special-blue {
             .special-panel {
@@ -502,6 +686,70 @@ a {
                 background: #C8E5FF;
                 border: 1px solid #195183;
             }
+            .about-block-3 {
+                .content {
+                    .contact {
+                        .form-wrapper {
+                            form {
+                                label {
+                                    input {
+                                        background: #C8E5FF;
+                                        &::placeholder {
+                                            color: #195183;
+                                        }
+                                    }
+                                    &.custom-checkbox {
+                                        flex-direction: row;
+                                        .checkbox {
+                                            border: 1px solid #195183;
+                                            .checkmark path {
+                                                fill: #195183;
+                                            }
+                                        }
+                                    }
+                                }
+                                button {
+                                    background: #C8E5FF;
+                                    border: 1px solid #195183;
+                                    color: #fff;
+                                    &:hover {
+                                        background: #C8E5FF;
+                                        border: 1px solid #195183;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+            
+                    }
+                }
+            }
+            .vacancies-body {
+                .content {
+                    .vacancies-block {
+                        .accordion-item {
+                            .accordion-header {
+                                svg path {
+                                    fill: #195183;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .price-body {
+                .content {
+                    .price-block {
+                        .accordion-item {
+                            .accordion-header {
+                                svg path {
+                                    fill: #195183;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         &.special-beuge {
             .special-panel {
@@ -520,6 +768,83 @@ a {
                         }
                         span {
                             color: #FFF5E6 !important;
+                        }
+                    }
+                }
+            }
+            .about-block-3 {
+                .content {
+                    .contact {
+                        .form-wrapper {
+                            form {
+                                label {
+                                    input {
+                                        background: #FFF5E6;
+                                        &::placeholder {
+                                            color: rgb(48, 22, 1);
+                                        }
+                                    }
+                                    &.custom-checkbox {
+                                        flex-direction: row;
+                                        .checkbox {
+                                            border: 1px solid rgb(48, 22, 1);
+                                            .checkmark path {
+                                                fill: rgb(48, 22, 1);
+                                            }
+                                        }
+                                    }
+                                }
+                                button {
+                                    background: #FFF5E6;
+                                    border: 1px solid rgb(48, 22, 1);
+                                    color: #fff;
+                                    &:hover {
+                                        background: #FFF5E6;
+                                        border: 1px solid rgb(48, 22, 1);
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+            
+                    }
+                }
+            }
+            .vacancies-body  {
+                .content {
+                    .vacancies-block {
+                        .accordion-item {
+                            .accordion-header {
+                                svg path {
+                                    fill: rgb(48, 22, 1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .price-body {
+                .content {
+                    .price-block {
+                        .accordion-item {
+                            .accordion-header {
+                                svg path {
+                                    fill: rgb(48, 22, 1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .news-single-body {
+                .content {
+                    .news-single-content {
+                        ul {
+                             li {
+                                &::before {
+                                    background-color: rgb(48, 22, 1);
+                                }
+                             }
                         }
                     }
                 }
@@ -3609,13 +3934,13 @@ a {
                         }
                         @media (max-width:450px) {
                             width: 100%;
-                            height: 150px;
+                            height: 200px;
                             border-radius: 30px;
                         }
-                        img {
+                        iframe {
                             width: 100%;
                             height: 100%;
-                            object-fit: cover;
+                            border: none;
                         }
                     }
                 }
@@ -3812,11 +4137,11 @@ a {
                     }
                     @media (max-width:768px) {
                         height: 250px;
-                     }
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                    }
+                    iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
                     }
                 }
             }
@@ -4092,10 +4417,16 @@ a {
                 display: flex;
                 flex-direction: column;
                 overflow: hidden;
+                @media (max-width:768px) {
+                    height: auto;
+                }
                 img {
                     width: 100%;
                     height: 260px;
                     transition: .3s ease;
+                    @media (max-width:768px) {
+                        height: 240px;
+                    }
                 }
                 .text {
                     padding: 0 20px 20px;
@@ -4147,6 +4478,9 @@ a {
             justify-content: center;
             align-items: center;
             .arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 cursor: pointer;
                 svg {
                     transition: .3s ease;

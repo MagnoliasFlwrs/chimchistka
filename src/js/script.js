@@ -199,6 +199,8 @@ if (specialPanel) {
             el.style.color = '#000';
             let fontSize = window.getComputedStyle(el).fontSize;
             el.dataset.fontsize = fontSize;
+            setFontSize(1.1 , el)
+
         })
         bodyHtml.querySelectorAll('img')?.forEach(el=> {
             el.style.filter = 'grayscale(100%)';
