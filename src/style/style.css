@@ -191,6 +191,28 @@ body.standart-special .about-block-3 .content .contact .form-wrapper form button
 body.standart-special .news-body .content .news-cards .news-card {
   height: auto;
 }
+body.standart-special .about-block-2 .content .goals-web .wrap .wrapper .col a {
+  background: #E8E8E8;
+  border: 1px solid #000;
+  color: #000;
+}
+body.standart-special .about-block-2 .content .goals-web .wrap .wrapper .col a:hover {
+  background: #E8E8E8;
+  border: 1px solid #000;
+  color: #000;
+}
+@media (max-width: 1120px) {
+  body.standart-special .about-block-2 .content .goals-tab a {
+    background: #E8E8E8;
+    border: 1px solid #000;
+    color: #000;
+  }
+  body.standart-special .about-block-2 .content .goals-tab a:hover {
+    background: #E8E8E8;
+    border: 1px solid #000;
+    color: #000;
+  }
+}
 body.standart-special.special-white .head-block-banner .content .banner {
   background: #343434;
 }
@@ -386,6 +408,34 @@ body.standart-special.special-white .news-body .content .controls ul li.active {
 body.standart-special.special-white .news-single-body .content .news-single-content ul li::before {
   background-color: #fff;
 }
+body.standart-special.special-white .contacts-body .content .contacts-wrapper .item .line {
+  background: #fff;
+}
+body.standart-special.special-white .contacts-body .content .contacts-wrapper .item .wrapper .rukovodstvo .ruk-item {
+  border-bottom: 1px solid #fff;
+}
+body.standart-special.special-white .about-block-2 .content .goals-web .wrap .wrapper .col a {
+  background: #343434;
+  border: 1px solid #343434;
+  color: #fff;
+}
+body.standart-special.special-white .about-block-2 .content .goals-web .wrap .wrapper .col a:hover {
+  background: #343434;
+  border: 1px solid #343434;
+  color: #fff;
+}
+@media (max-width: 1120px) {
+  body.standart-special.special-white .about-block-2 .content .goals-tab a {
+    background: #343434;
+    border: 1px solid #343434;
+    color: #fff;
+  }
+  body.standart-special.special-white .about-block-2 .content .goals-tab a:hover {
+    background: #343434;
+    border: 1px solid #343434;
+    color: #fff;
+  }
+}
 body.standart-special.special-blue .special-panel .content .settings-panel {
   background: #C8E5FF;
 }
@@ -494,6 +544,28 @@ body.standart-special.special-blue .vacancies-body .content .vacancies-block .ac
 body.standart-special.special-blue .price-body .content .price-block .accordion-item .accordion-header svg path {
   fill: #195183;
 }
+body.standart-special.special-blue .about-block-2 .content .goals-web .wrap .wrapper .col a {
+  background: #C8E5FF;
+  border: 1px solid #195183;
+  color: #fff;
+}
+body.standart-special.special-blue .about-block-2 .content .goals-web .wrap .wrapper .col a:hover {
+  background: #C8E5FF;
+  border: 1px solid #195183;
+  color: #fff;
+}
+@media (max-width: 1120px) {
+  body.standart-special.special-blue .about-block-2 .content .goals-tab a {
+    background: #C8E5FF;
+    border: 1px solid #195183;
+    color: #fff;
+  }
+  body.standart-special.special-blue .about-block-2 .content .goals-tab a:hover {
+    background: #C8E5FF;
+    border: 1px solid #195183;
+    color: #fff;
+  }
+}
 body.standart-special.special-beuge .special-panel .content .settings-panel {
   background: #FFF5E6;
 }
@@ -542,6 +614,28 @@ body.standart-special.special-beuge .price-body .content .price-block .accordion
 }
 body.standart-special.special-beuge .news-single-body .content .news-single-content ul li::before {
   background-color: rgb(48, 22, 1);
+}
+body.standart-special.special-beuge .about-block-2 .content .goals-web .wrap .wrapper .col a {
+  background: #FFF5E6;
+  border: 1px solid rgb(48, 22, 1);
+  color: #fff;
+}
+body.standart-special.special-beuge .about-block-2 .content .goals-web .wrap .wrapper .col a:hover {
+  background: #FFF5E6;
+  border: 1px solid rgb(48, 22, 1);
+  color: #fff;
+}
+@media (max-width: 1120px) {
+  body.standart-special.special-beuge .about-block-2 .content .goals-tab a {
+    background: #FFF5E6;
+    border: 1px solid rgb(48, 22, 1);
+    color: #fff;
+  }
+  body.standart-special.special-beuge .about-block-2 .content .goals-tab a:hover {
+    background: #FFF5E6;
+    border: 1px solid rgb(48, 22, 1);
+    color: #fff;
+  }
 }
 
 .special-panel {
@@ -4456,6 +4550,10 @@ body.standart-special.special-beuge .news-single-body .content .news-single-cont
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: 0;
+}
+.contacts-body .content .contacts-wrapper .item .wrapper .departments .departments-item ul li {
+  font-size: 0 !important;
 }
 .contacts-body .content .contacts-wrapper .item .wrapper .departments .departments-item ul li a {
   color: var(---, #0D1D53);

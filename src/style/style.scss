@@ -246,7 +246,7 @@ a {
                             }
                         }
                     }
-        
+
                 }
             }
         }
@@ -255,6 +255,42 @@ a {
                 .news-cards {
                     .news-card {
                         height: auto;
+                    }
+                }
+            }
+        }
+        .about-block-2 {
+            .content {
+                .goals-web {
+                    .wrap {
+                        .wrapper {
+                            .col {
+                                a {
+                                    background: #E8E8E8;
+                                    border: 1px solid #000;
+                                    color: #000;
+                                    &:hover {
+                                        background: #E8E8E8;
+                                        border: 1px solid #000;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .goals-tab {
+                    @media (max-width:1120px) {
+                        a {
+                            background: #E8E8E8;
+                            border: 1px solid #000;
+                            color: #000;
+                            &:hover {
+                                background: #E8E8E8;
+                                border: 1px solid #000;
+                                color: #000;
+                            }
+                        }
                     }
                 }
             }
@@ -478,7 +514,7 @@ a {
                                 }
                             }
                         }
-            
+
                     }
                 }
             }
@@ -553,13 +589,13 @@ a {
                                 line-height: 25px; /* 156.25% */
                                 transition: .3s ease;
                                 cursor: pointer;
-            
+
                                 &:hover {
                                     border-radius: 6px;
                                     border: 1px solid #fff;
                                     color: #fff;
                                 }
-            
+
                                 &.active {
                                     border-radius: 6px;
                                     border: 1px solid #fff;
@@ -567,7 +603,7 @@ a {
                                 }
                             }
                         }
-            
+
                     }
                 }
             }
@@ -584,7 +620,62 @@ a {
                     }
                 }
             }
-            
+            .contacts-body {
+                .content {
+                    .contacts-wrapper {
+                        .item {
+                            .line {
+                                background: #fff;
+                            }
+                            .wrapper {
+                                .rukovodstvo {
+                                    .ruk-item {
+                                        border-bottom: 1px solid #fff;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            .about-block-2 {
+                .content {
+                    .goals-web {
+                        .wrap {
+                            .wrapper {
+                                .col {
+                                    a {
+                                        background: #343434;
+                                        border: 1px solid #343434;
+                                        color: #fff;
+                                        &:hover {
+                                            background: #343434;
+                                            border: 1px solid #343434;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .goals-tab {
+                        @media (max-width:1120px) {
+                            a {
+                                background: #343434;
+                                border: 1px solid #343434;
+                                color: #fff;
+                                &:hover {
+                                    background: #343434;
+                                    border: 1px solid #343434;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
         &.special-blue {
             .special-panel {
@@ -720,7 +811,7 @@ a {
                                 }
                             }
                         }
-            
+
                     }
                 }
             }
@@ -744,6 +835,42 @@ a {
                             .accordion-header {
                                 svg path {
                                     fill: #195183;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about-block-2 {
+                .content {
+                    .goals-web {
+                        .wrap {
+                            .wrapper {
+                                .col {
+                                    a {
+                                        background: #C8E5FF;
+                                        border: 1px solid #195183;
+                                        color: #fff;
+                                        &:hover {
+                                            background: #C8E5FF;
+                                            border: 1px solid #195183;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .goals-tab {
+                        @media (max-width:1120px) {
+                            a {
+                                background: #C8E5FF;
+                                border: 1px solid #195183;
+                                color: #fff;
+                                &:hover {
+                                    background: #C8E5FF;
+                                    border: 1px solid #195183;
+                                    color: #fff;
                                 }
                             }
                         }
@@ -806,7 +933,7 @@ a {
                                 }
                             }
                         }
-            
+
                     }
                 }
             }
@@ -845,6 +972,42 @@ a {
                                     background-color: rgb(48, 22, 1);
                                 }
                              }
+                        }
+                    }
+                }
+            }
+            .about-block-2 {
+                .content {
+                    .goals-web {
+                        .wrap {
+                            .wrapper {
+                                .col {
+                                    a {
+                                        background: #FFF5E6;
+                                        border: 1px solid rgb(48, 22, 1);
+                                        color: #fff;
+                                        &:hover {
+                                            background: #FFF5E6;
+                                            border: 1px solid rgb(48, 22, 1);
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .goals-tab {
+                        @media (max-width:1120px) {
+                            a {
+                                background: #FFF5E6;
+                                border: 1px solid rgb(48, 22, 1);
+                                color: #fff;
+                                &:hover {
+                                    background: #FFF5E6;
+                                    border: 1px solid rgb(48, 22, 1);
+                                    color: #fff;
+                                }
+                            }
                         }
                     }
                 }
@@ -4348,7 +4511,9 @@ a {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 20px;
+                                font-size: 0;
                                 li {
+                                    font-size: 0 !important;
                                     a {
                                         color: var(---, #0D1D53);
                                         font-family: Open Sans;
